@@ -18,7 +18,7 @@ jobs:
 
       - name: Decode gsheet credentials
         run: |
-          echo "${{ secrets.GSHEET_CREDS_B64 }}" | base64 -d > gsheet-creds.json
+          echo "${{ secrets.GSHEET_CREDS }}" | base64 -d > gsheet-creds.json
 
       - name: Run scraper
-        run: python your_script.py
+        run: python naukri_schedule.py
