@@ -6,25 +6,11 @@ import re
 import time
 import warnings
 import requests
-import traceback
-import random
-import pyautogui
 import json
 import pandas as pd
-from selenium import webdriver
-import undetected_chromedriver as uc
-from bs4 import BeautifulSoup
-from selenium.webdriver.common.by import By
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.action_chains import ActionChains
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
 from datetime import datetime
-from dateutil.relativedelta import relativedelta
 import string
 from concurrent.futures import ThreadPoolExecutor
 import gspread
@@ -288,8 +274,3 @@ def process_output(info):
 
 if __name__ == '__main__':
     main()
-
-                
-
-    
-
