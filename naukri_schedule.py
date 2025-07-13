@@ -264,9 +264,9 @@ def process_output(info):
         set_with_dataframe(worksheet, df)
         
 
-        top_n = int(len(df) * 0.10)
-        df = df.iloc[:top_n]
-        FinalOutputList.append(df.to_dict(orient='records'))
+        # top_n = int(len(df) * 0.10)
+        # df = df.iloc[:top_n]
+        # FinalOutputList.append(df.to_dict(orient='records'))
         # print(FinalOutputList)
 
     except Exception as e:
