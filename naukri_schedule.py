@@ -49,7 +49,7 @@ def clean(data):
 
 # gsheet auth
 scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("gsheet-465813-0124c11de947.json", scope)
+creds = ServiceAccountCredentials.from_json_keyfile_name("gsheet-creds.json", scope)
 client = gspread.authorize(creds)
 
 # clear sheets
