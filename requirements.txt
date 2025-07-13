@@ -1,0 +1,12 @@
+beautifulsoup4
+requests
+selenium
+undetected-chromedriver
+pandas
+numpy
+scikit-learn
+python-dateutil
+gspread
+gspread-dataframe
+oauth2client
+pyautogui
