@@ -186,6 +186,7 @@ def fetch_page(key_info):
 
                 output_dict = {
                     "SL NO.": None,
+                    "DATE": today,
                     "NAME": name,
                     "DETAIL LINK": detail_link,
                     "COMPANY NAME": companyName,
