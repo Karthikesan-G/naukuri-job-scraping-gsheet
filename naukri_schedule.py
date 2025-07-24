@@ -116,7 +116,7 @@ def main():
                 page_nums = [i for i in range(1, total_pages + 1)]
                 key_info = [(i, info) for i in page_nums]
 
-                concurrent_requests = 30
+                concurrent_requests = 5
 
                 with ThreadPoolExecutor(max_workers=concurrent_requests) as executor:
                     executor.map(fetch_page, key_info)
