@@ -66,14 +66,23 @@ infos = [
         'job_title_keyword': 'Web Scraping',
         'job_location': 'india',
         'exp': True,
+        'filter_unwanted': True,
         'match_keywords': ["python", "perl", "web scraping", "data extraction", "data manipulation", "data analysis", "automation", "selenium", "beautifulsoup", "scrapy", "regex", "pandas", "numpy", "etl", "mysql", "data cleaning", "data transformation", "code optimization", "json", "csv", "apis", "xml", "xpath", "sql", "docker", "git", "github", "headless browsers", "captcha solving", "proxy management", "ip rotation", "html", "css", "javascript", "css selectors", "web crawling", "browser automation", "api integration", "multi-threading", "asynchronous scraping", "dynamic content"]
     },
     {
         'job_title_keyword': 'Data Engineer',
         'job_location': 'india',
         'exp': False,
+        'filter_unwanted': True,
         'match_keywords': ["data engineer", "python", "pyspark", "spark", "sql", "aws", "azure", "gcp", "airlfow", "cloud", "snowflake", "dbt", "data build tool", "data warehousing", "date ingestion", "data ingestion", "data pipeline", "etl", "extract", "transform", "load", "databricks"]
 
+    },
+    {
+        'job_title_keyword': 'Python Developer',
+        'job_location': 'india',
+        'exp': True,
+        'filter_unwanted': False,
+        'match_keywords': ["Python", "Perl", "SQL", "MySQL", "Microsoft SQL Server", "MongoDB", "Aqua Data Studio", "Pandas", "NumPy", "Apache Airflow", "BeautifulSoup", "Scrapy", "Selenium", "Playwright", "lxml", "XPath", "CSS", "Tesseract", "OCR", "Django", "FastAPI", "Matplotlib", "Seaborn", "Git", "GitHub", "Docker", "Linux", "Unix", "CLI", "Putty", "Jira", "Confluence", "Backend Development"]
     }
 ]
 
@@ -138,7 +147,7 @@ def fetch_page(key_info):
         # print(List_url)
 
         List_con_obj = req.get(List_url, headers=con_header)
-        print(f"{page}\t{List_con_obj.status_code}")
+        # print(f"{page}\t{List_con_obj.status_code}")
 
         List_con = List_con_obj.content
 
@@ -237,7 +246,8 @@ def process_output(info):
         df['Match_Percentage'] = df['Match_Percentage'].apply(lambda x: f"{x:.2f}%")
 
         #filterout unwanted
-        df = df[df['Match_Percentage'] != '0.00%']
+        if info['filter_unwanted']:
+            df = df[df['Match_Percentage'] != '0.00%']
         # df = df[df['POSTED TIME'].str.contains(r'Today|Just Now|Few Hours Ago|^1 Day Ago|^2 Days Ago|^3 Days Ago|^4 Days Ago|^5 Days Ago', case=False, na=False)]
 
         # resetiing index values
