@@ -25,7 +25,6 @@ jobs:
 
       - name: Decode gsheet credentials
         run: |
-          echo "${{ secrets.GSHEET_CREDS }}"
           echo "${{ secrets.GSHEET_CREDS }}" | base64 -d > gsheet-creds.json
 
       - name: Run scraper
