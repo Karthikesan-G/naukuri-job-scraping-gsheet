@@ -1,4 +1,4 @@
-*.json
+gsheet-creds.json
 naukri.py
 naukri_concurrent.py
 *.xlsx

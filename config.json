@@ -1,0 +1,35 @@
+{
+  "infos": [
+        {
+            "job_title_keyword": "Web Scraping",
+            "job_location": "india",
+            "exp": true,
+            "filter_unwanted": true,
+            "match_keywords": ["python", "perl", "web scraping", "data extraction", "data manipulation", "data analysis", "automation", "selenium", "beautifulsoup", "scrapy", "regex", "pandas", "numpy", "etl", "mysql", "data cleaning", "data transformation", "code optimization", "json", "csv", "apis", "xml", "xpath", "sql", "docker", "git", "github", "headless browsers", "captcha solving", "proxy management", "ip rotation", "html", "css", "javascript", "css selectors", "web crawling", "browser automation", "api integration", "multi-threading", "asynchronous scraping", "dynamic content"]
+        },
+        {
+            "job_title_keyword": "Data Engineer",
+            "job_location": "india",
+            "exp": false,
+            "filter_unwanted": true,
+            "match_keywords": ["data engineer", "python", "pyspark", "spark", "sql", "aws", "azure", "gcp", "airlfow", "cloud", "snowflake", "dbt", "data build tool", "data warehousing", "date ingestion", "data ingestion", "data pipeline", "etl", "extract", "transform", "load", "databricks"]
+
+        },
+        {
+            "job_title_keyword": "Python Developer",
+            "job_location": "india",
+            "exp": true,
+            "filter_unwanted": false,
+            "match_keywords": ["Python", "Perl", "SQL", "MySQL", "Microsoft SQL Server", "MongoDB", "Aqua Data Studio", "Pandas", "NumPy", "Apache Airflow", "BeautifulSoup", "Scrapy", "Selenium", "Playwright", "lxml", "XPath", "CSS", "Tesseract", "OCR", "Django", "FastAPI", "Matplotlib", "Seaborn", "Git", "GitHub", "Docker", "Linux", "Unix", "CLI", "Putty", "Jira", "Confluence", "Backend Development"]
+        }
+    ],
+
+  "headers": {
+        "accept": "application/json",
+        "appid": "109",
+        "nkparam": "cfLKV5XiEzsCnBxwGGyf35+jH3uBA0AcwWKn9eHnVB6KWXce44Fb6at/NI06sGi5bwFLY1u3sJQ4ATWTLWFvUA==",
+        "priority": "u=1, i",
+        "systemid": "Naukri",
+        "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"
+    }
+}

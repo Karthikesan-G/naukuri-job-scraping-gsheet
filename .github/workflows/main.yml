@@ -28,4 +28,4 @@ jobs:
           echo "${{ secrets.GSHEET_CREDS }}" | base64 -d > gsheet-creds.json
 
       - name: Run scraper
-        run: python naukri_schedule.py
+        run: python main.py
